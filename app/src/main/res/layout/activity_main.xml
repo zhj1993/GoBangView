@@ -7,12 +7,14 @@
     tools:context=".MainActivity">
 
     <com.gobangview.game.GoBangPanel
+        android:visibility="gone"
         android:id="@+id/gobang_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true" />
 
     <Button
+        android:visibility="gone"
         android:id="@+id/restart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -21,4 +23,9 @@
         android:layout_marginRight="10dp"
         android:layout_marginBottom="10dp"
         android:text="重新开始" />
+
+    <com.gobangview.game.MySurfaceView
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="400dp" />
 </RelativeLayout>
